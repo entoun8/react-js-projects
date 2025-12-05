@@ -1,6 +1,6 @@
 # React Mini Projects Portfolio
 
-A collection of 22 React projects demonstrating core concepts, state management patterns, routing, API integration, TypeScript, and UI component development. Built as part of my learning journey toward full-stack development.
+A collection of 26 React projects demonstrating core concepts, state management patterns, routing, API integration, TypeScript, and UI component development. Built as part of my learning journey toward full-stack development.
 
 ![React](https://img.shields.io/badge/React-19.1-61DAFB?style=flat&logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -30,7 +30,7 @@ This portfolio showcases my progression in React development, from basic compone
 
 ## 📂 Projects
 
-Projects are numbered by difficulty level (1 = easiest, 22 = most complex):
+Projects are numbered by difficulty level (1 = easiest, 26 = most complex):
 
 ### 🌱 Beginner Level (1-6)
 
@@ -188,7 +188,7 @@ Full-featured project and task management application with complex state handlin
 
 ---
 
-### 🎯 Expert Level (19-22)
+### 🎯 Expert Level (19-26)
 
 #### [19. Shopping Cart](./19_cart)
 
@@ -221,6 +221,38 @@ Multi-page cocktail search application with external API integration.
 - **Tech:** React Router v6, TheCocktailDB API, Tailwind CSS
 - **Features:** Search cocktails, detailed cocktail pages, about page, routing, error handling
 - **Concepts:** Routing, API integration, Context API, useReducer
+
+#### [23. Popcorn](./23_popcorn) [TypeScript]
+
+Movie rating and watchlist application with persistent storage.
+
+- **Tech:** React 19, TypeScript, OMDB API, Tailwind CSS v4
+- **Features:** Search movies, rate films, build watchlist, local storage persistence, statistics
+- **Concepts:** TypeScript, API integration, local storage, custom hooks, data persistence
+
+#### [24. Quiz App](./24_quiz) [TypeScript]
+
+Interactive quiz application with timer and scoring system.
+
+- **Tech:** React 19, TypeScript, JSON Server, Tailwind CSS v4
+- **Features:** Timed questions, score tracking, progress bar, API simulation
+- **Concepts:** TypeScript, useReducer, timer logic, JSON Server, complex state machines
+
+#### [25. Pizza Order](./25_pizza-order) [TypeScript]
+
+Full-featured pizza ordering system with cart and checkout.
+
+- **Tech:** React 19, TypeScript, Redux Toolkit, React Router, Tailwind CSS v4
+- **Features:** Browse menu, customize orders, cart management, checkout flow, order tracking
+- **Concepts:** TypeScript, Redux Toolkit, React Router, form handling, cart state management
+
+#### [26. WorldWise](./26_worldwise) [TypeScript]
+
+Travel tracking application with interactive maps and location management.
+
+- **Tech:** React 19, TypeScript, React Router 7, Leaflet, JSON Server, Tailwind CSS v4
+- **Features:** Interactive map, click-to-add cities, travel notes, country tracking, geolocation
+- **Concepts:** TypeScript, React Router, Leaflet maps, Context API, geolocation API, reverse geocoding
 
 ---
 
@@ -297,11 +329,14 @@ project-name/
 
 ### Advanced Features
 
-- **React Router v6** - Multi-page navigation and routing
+- **React Router v6 & v7** - Multi-page navigation and routing
 - **API Integration** - Async data fetching with useEffect and fetch
 - **Loading States** - User feedback during async operations
 - **Error Handling** - Graceful error management and user feedback
 - **Refs** - DOM manipulation and imperative code with useRef
+- **Geolocation API** - Browser geolocation features
+- **Local Storage** - Data persistence in browser
+- **Interactive Maps** - Leaflet integration for mapping features
 
 ### Modern Tooling
 
@@ -319,7 +354,7 @@ These projects represent my journey learning React, organized by difficulty:
 1. **Beginner (1-6)** → Basic state, rendering, and simple interactions
 2. **Intermediate (7-12)** → Forms, animations, external libraries, and CRUD operations
 3. **Advanced (13-18)** → TypeScript, complex layouts, game logic, refs & portals
-4. **Expert (19-22)** → Context API, useReducer, Redux Toolkit, routing & API integration
+4. **Expert (19-26)** → Context API, useReducer, Redux Toolkit, routing, API integration, maps & geolocation
 
 ---
 

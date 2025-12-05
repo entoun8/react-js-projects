@@ -1,0 +1,37 @@
+{
+  "cities": [
+    {
+      "id": "6621",
+      "cityName": "Leganes",
+      "country": "Spain",
+      "date": "2025-07-16",
+      "notes": "",
+      "position": {
+        "lat": 40.336386310600496,
+        "lng": -3.7353515625000004
+      }
+    },
+    {
+      "id": "db3c",
+      "cityName": "Abadin",
+      "country": "Spain",
+      "date": "2025-07-16",
+      "notes": "",
+      "position": {
+        "lat": 43.29396871389239,
+        "lng": -7.470703125000001
+      }
+    },
+    {
+      "id": "49ec",
+      "cityName": "Herrera del Duque",
+      "country": "Spain",
+      "date": "2025-08-01",
+      "notes": "",
+      "position": {
+        "lat": 39.23630076831751,
+        "lng": -5.009765625000001
+      }
+    }
+  ]
+}

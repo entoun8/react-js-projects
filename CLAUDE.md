@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a monorepo containing 22 independent React practice projects built with Vite. Each project is a standalone application demonstrating different React concepts, TypeScript, and UI patterns.
+This is a monorepo containing 26 independent React practice projects built with Vite. Each project is a standalone application demonstrating different React concepts, TypeScript, and UI patterns.
 
 ## Project List
 
-Projects are numbered by difficulty level (1 = easiest, 22 = most complex):
+Projects are numbered by difficulty level (1 = easiest, 26 = most complex):
 
 ### Beginner Level (1-6)
 - **01_birthday** - Birthday reminder app (basic state, rendering lists)
@@ -34,11 +34,15 @@ Projects are numbered by difficulty level (1 = easiest, 22 = most complex):
 - **17_tic-tac-toe** - Tic-tac-toe game with game state logic (game logic, history management)
 - **18_management** - Project management app with modals and refs (refs, portals, modals)
 
-### Expert Level (19-22)
+### Expert Level (19-26)
 - **19_cart** - Shopping cart with useReducer and Context API (Context API, useReducer)
 - **20_bank** [TypeScript] - Banking app with Redux Toolkit (TypeScript, Redux Toolkit, complex state)
 - **21_movies** - Movie search app with React Router (routing, API integration, search)
 - **22_cocktails** - Cocktail search app with React Router (routing, API integration, Context API, useReducer)
+- **23_popcorn** [TypeScript] - Movie rating and watchlist app (TypeScript, API integration, local storage, custom hooks)
+- **24_quiz** [TypeScript] - Quiz application with JSON server (TypeScript, useReducer, timer logic, API simulation)
+- **25_pizza-order** [TypeScript] - Pizza ordering system with Redux (TypeScript, Redux Toolkit, React Router, cart management)
+- **26_worldwise** [TypeScript] - Travel tracking app with interactive maps (TypeScript, React Router, Leaflet maps, geolocation, Context API)
 
 ## Common Commands
 
@@ -73,10 +77,12 @@ All projects use:
 - **ESLint** - Linting with React-specific rules
 
 Some projects also use:
-- **TypeScript** - Type-safe development (13_steps, 14_pizza-menu, 15_far-away, 20_bank)
-- **Redux Toolkit** - Advanced state management (20_bank)
-- **React Router** - Client-side routing (21_movies, 22_cocktails)
-- **Context API + useReducer** - State management (19_cart, 22_cocktails)
+- **TypeScript** - Type-safe development (13_steps, 14_pizza-menu, 15_far-away, 20_bank, 23_popcorn, 24_quiz, 25_pizza-order, 26_worldwise)
+- **Redux Toolkit** - Advanced state management (20_bank, 25_pizza-order)
+- **React Router** - Client-side routing (21_movies, 22_cocktails, 25_pizza-order, 26_worldwise)
+- **Context API + useReducer** - State management (19_cart, 22_cocktails, 26_worldwise)
+- **Leaflet** - Interactive maps (26_worldwise)
+- **JSON Server** - API simulation (24_quiz, 26_worldwise)
 
 ## Project Structure
 
@@ -119,14 +125,16 @@ Each project follows a similar structure:
    - Store configuration with slices
    - Typed hooks for TypeScript projects
 
-### Routing (21_movies, 22_cocktails)
-- Uses React Router v6
+### Routing (21_movies, 22_cocktails, 25_pizza-order, 26_worldwise)
+- Uses React Router v6 or v7
 - Pages in `src/pages/` directory
 - Routes defined in `App.jsx`
 
 ### Data Handling
 - Mock data stored in `data.js` files
-- Some projects fetch from external APIs (e.g., 22_cocktails uses TheCocktailDB API)
+- Some projects fetch from external APIs (e.g., 22_cocktails uses TheCocktailDB API, 23_popcorn uses OMDB API)
+- JSON Server for local API simulation (24_quiz, 26_worldwise)
+- Local storage for data persistence (23_popcorn)
 
 ## Development Workflow
 
