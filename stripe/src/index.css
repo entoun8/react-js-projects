@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .submenu {
+    @apply absolute hidden sm:block bg-white before:content-[''] before:absolute before:-top-4 before:left-1/2 before:-translate-x-1/2 before:border-8 before:border-t-transparent before:border-l-transparent before:border-r-transparent before:border-b-white rounded-lg p-4;
+  }
+}

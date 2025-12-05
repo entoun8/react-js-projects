@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@layer components {
+  .btn {
+    @apply bg-slate-200 font-bold h-[116px]  text-black text-4xl rounded-sm hover:bg-slate-100;
+  }
+}
