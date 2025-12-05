@@ -4,27 +4,41 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a monorepo containing 17 independent React practice projects built with Vite. Each project is a standalone application demonstrating different React concepts and UI patterns.
+This is a monorepo containing 22 independent React practice projects built with Vite. Each project is a standalone application demonstrating different React concepts, TypeScript, and UI patterns.
 
 ## Project List
 
-- **accordion** - Accordion/collapse component
-- **birthday** - Birthday reminder app
-- **cart** - Shopping cart with useReducer and Context API
-- **cocktails** - Cocktail search app with React Router
-- **color-generator** - Color palette generator
-- **grocery-bud** - Todo/grocery list app
-- **lorem ipsum** - Lorem ipsum generator
-- **management** - Project management app with modals and refs
-- **menu** - Restaurant menu with filtering
-- **navbar** - Responsive navigation component
-- **review** - Review/testimonial carousel
-- **sidebar** - Sidebar navigation component
-- **slider** - Image slider/carousel
-- **stripe** - Stripe landing page clone with navigation
-- **tabs** - Tabbed interface component
-- **tic-tac-toe** - Tic-tac-toe game with game state logic
-- **tours** - Tours listing with expand/collapse
+Projects are numbered by difficulty level (1 = easiest, 22 = most complex):
+
+### Beginner Level (1-6)
+- **01_birthday** - Birthday reminder app (basic state, rendering lists)
+- **02_menu** - Restaurant menu with filtering (array methods, conditional rendering)
+- **03_tours** - Tours listing with expand/collapse (state management, UI updates)
+- **04_review** - Review/testimonial carousel (state, event handlers)
+- **05_accordion** - Accordion/collapse component (conditional rendering, component state)
+- **06_tabs** - Tabbed interface component (state, dynamic content)
+
+### Intermediate Level (7-12)
+- **07_slider** - Image slider/carousel (state management, intervals)
+- **08_lorem-ipsum** - Lorem ipsum generator (forms, dynamic data generation)
+- **09_navbar** - Responsive navigation component (responsive design, event handling)
+- **10_sidebar** - Sidebar navigation component (conditional rendering, animations)
+- **11_color-generator** - Color palette generator (external library integration, forms)
+- **12_grocery-bud** - Todo/grocery list app (CRUD operations, local storage)
+
+### Advanced Level (13-18)
+- **13_steps** [TypeScript] - Multi-step guide component (TypeScript basics, component composition)
+- **14_pizza-menu** [TypeScript] - Pizza restaurant menu (TypeScript, props, conditional rendering)
+- **15_far-away** [TypeScript] - Travel packing list manager (TypeScript, state management, sorting)
+- **16_stripe** - Stripe landing page clone with navigation (complex layouts, navigation patterns)
+- **17_tic-tac-toe** - Tic-tac-toe game with game state logic (game logic, history management)
+- **18_management** - Project management app with modals and refs (refs, portals, modals)
+
+### Expert Level (19-22)
+- **19_cart** - Shopping cart with useReducer and Context API (Context API, useReducer)
+- **20_bank** [TypeScript] - Banking app with Redux Toolkit (TypeScript, Redux Toolkit, complex state)
+- **21_movies** - Movie search app with React Router (routing, API integration, search)
+- **22_cocktails** - Cocktail search app with React Router (routing, API integration, Context API, useReducer)
 
 ## Common Commands
 
@@ -53,14 +67,16 @@ npm run preview
 ## Technology Stack
 
 All projects use:
-- **React 18** - UI library
+- **React 18 & 19** - UI library
 - **Vite** - Build tool and dev server
-- **Tailwind CSS** - Utility-first CSS (most projects)
+- **Tailwind CSS v3 & v4** - Utility-first CSS
 - **ESLint** - Linting with React-specific rules
 
 Some projects also use:
-- **React Router** - Client-side routing (cocktails)
-- **Context API + useReducer** - State management (cart, cocktails)
+- **TypeScript** - Type-safe development (13_steps, 14_pizza-menu, 15_far-away, 20_bank)
+- **Redux Toolkit** - Advanced state management (20_bank)
+- **React Router** - Client-side routing (21_movies, 22_cocktails)
+- **Context API + useReducer** - State management (19_cart, 22_cocktails)
 
 ## Project Structure
 
@@ -94,20 +110,23 @@ Each project follows a similar structure:
 - Prop drilling is avoided using Context API when state needs to be shared across multiple components
 
 ### State Management Patterns
-1. **Local State** (useState) - Most simple projects (accordion, birthday, menu, etc.)
-2. **Context API + useReducer** - Complex state (cart, cocktails)
+1. **Local State** (useState) - Most simple projects (01_birthday, 02_menu, 05_accordion, etc.)
+2. **Context API + useReducer** - Complex state (19_cart, 22_cocktails)
    - Context defined in `Context.jsx` with provider component
    - Reducer logic in `Reducer.jsx` with action types
    - Custom hook (e.g., `useGlobalContext()`) for consuming context
+3. **Redux Toolkit** - Advanced global state (20_bank)
+   - Store configuration with slices
+   - Typed hooks for TypeScript projects
 
-### Routing (cocktails project)
+### Routing (21_movies, 22_cocktails)
 - Uses React Router v6
 - Pages in `src/pages/` directory
 - Routes defined in `App.jsx`
 
 ### Data Handling
 - Mock data stored in `data.js` files
-- Some projects fetch from external APIs (e.g., cocktails uses TheCocktailDB API)
+- Some projects fetch from external APIs (e.g., 22_cocktails uses TheCocktailDB API)
 
 ## Development Workflow
 

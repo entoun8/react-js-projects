@@ -1,10 +1,12 @@
 # React Mini Projects Portfolio
 
-A collection of 17 React projects demonstrating core concepts, state management patterns, routing, API integration, and UI component development. Built as part of my learning journey toward full-stack development.
+A collection of 22 React projects demonstrating core concepts, state management patterns, routing, API integration, TypeScript, and UI component development. Built as part of my learning journey toward full-stack development.
 
-![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-19.1-61DAFB?style=flat&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat&logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux_Toolkit-2.8-764ABC?style=flat&logo=redux&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.0-646CFF?style=flat&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 
 ---
 
@@ -16,9 +18,11 @@ This portfolio showcases my progression in React development, from basic compone
 
 ## 🛠️ Technologies
 
-- **React 18** - Modern hooks and functional components
+- **React 18 & 19** - Modern hooks and functional components
+- **TypeScript** - Type-safe development
+- **Redux Toolkit** - Advanced state management
 - **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first styling
+- **Tailwind CSS v3 & v4** - Utility-first styling
 - **React Router** - Client-side routing
 - **Context API & useReducer** - State management patterns
 
@@ -26,155 +30,197 @@ This portfolio showcases my progression in React development, from basic compone
 
 ## 📂 Projects
 
-### 🏗️ Advanced Applications
+Projects are numbered by difficulty level (1 = easiest, 22 = most complex):
 
-#### [Project Management App](./management)
+### 🌱 Beginner Level (1-6)
 
-Full-featured project and task management application with complex state handling.
-
-- **Tech:** React, Tailwind CSS, Vite
-- **Features:** Create/delete projects, manage tasks, sidebar navigation, modal support
-- **Concepts:** Complex state management, component composition, refs & modals, form validation
-
-#### [Shopping Cart](./cart)
-
-E-commerce cart with advanced state management patterns.
-
-- **Tech:** React, useReducer, Context API, React Icons
-- **Features:** Add/remove items, quantity control, total calculation, clear cart
-- **Concepts:** useReducer pattern, global state with Context API, action dispatchers
-
-#### [Cocktail Finder](./cocktails)
-
-Multi-page cocktail search application with external API integration.
-
-- **Tech:** React Router v6, TheCocktailDB API, Tailwind CSS
-- **Features:** Search cocktails, detailed cocktail pages, about page, routing, error handling
-- **Concepts:** React Router, API integration, async data fetching, loading states
-
-#### [Stripe Navigation Clone](./stripe)
-
-Animated dropdown navigation system with dynamic positioning.
-
-- **Tech:** React, Context API, React Icons
-- **Features:** Hover-triggered submenus, dynamic positioning, responsive sidebar
-- **Concepts:** Advanced Context usage, coordinate tracking, animated transitions
-
----
-
-### 🎮 Interactive Applications
-
-#### [Tic-Tac-Toe Game](./tic-tac-toe)
-
-Two-player game with winner detection and game state management.
-
-- **Tech:** React, Tailwind CSS
-- **Features:** Player customization, winner detection, game history, draw detection, rematch
-- **Concepts:** Game logic, state derivation, conditional rendering, winner algorithms
-
-#### [Grocery List Manager](./grocery-bud)
-
-Todo/grocery list with full CRUD operations.
-
-- **Tech:** React, Font Awesome, Tailwind CSS
-- **Features:** Add/edit/delete items, alert system, form validation
-- **Concepts:** Form handling, state updates, user feedback, CRUD operations
-
-#### [Tours Browser](./tours)
-
-Travel destination browser with API data.
-
-- **Tech:** React, Tailwind CSS, async/await
-- **Features:** Fetch tours from API, loading states, remove functionality, error handling
-- **Concepts:** API integration, loading/error states, async data fetching
-
-#### [Restaurant Menu](./menu)
-
-Menu display with category filtering.
-
-- **Tech:** React, Tailwind CSS
-- **Features:** Dynamic category generation, filter by category, responsive grid
-- **Concepts:** Data filtering, dynamic UI generation, array methods
-
----
-
-### 🎨 UI Components
-
-#### [Accordion Component](./accordion)
-
-FAQ-style accordion with toggle functionality.
-
-- **Tech:** React, Tailwind CSS
-- **Features:** Expand/collapse questions, single-item toggle
-- **Concepts:** useState for toggle state, conditional rendering
-
-#### [Tabs Interface](./tabs)
-
-Tabbed content switcher for company experience display.
-
-- **Tech:** React, Tailwind CSS
-- **Features:** Switch between different company experiences
-- **Concepts:** Dynamic content rendering, active state management
-
-#### [Image Slider](./slider)
-
-Carousel with navigation controls and boundary detection.
-
-- **Tech:** React, Tailwind CSS
-- **Features:** Left/right navigation, boundary detection, smooth transitions
-- **Concepts:** Array navigation, conditional button disabling
-
-#### [Responsive Navbar](./navbar)
-
-Mobile-responsive navigation with hamburger menu.
-
-- **Tech:** React, React Icons, Font Awesome, Tailwind CSS
-- **Features:** Hamburger menu, mobile responsive, smooth transitions
-- **Concepts:** Responsive design, mobile-first approach
-
-#### [Sidebar Navigation](./sidebar)
-
-Sidebar with modal support and global state.
-
-- **Tech:** React, Context API, React Icons, Tailwind CSS
-- **Features:** Toggle sidebar, modal support, icon integration
-- **Concepts:** Context API for global state, modal patterns
-
-#### [Review Carousel](./review)
-
-Product review display with rating and navigation.
-
-- **Tech:** React, Font Awesome, Tailwind CSS
-- **Features:** Navigate reviews, random review selection, rating display
-- **Concepts:** Carousel logic, random selection algorithms
-
----
-
-### 🛠️ Utility Tools
-
-#### [Color Palette Generator](./color-generator)
-
-Generate color variations from a single color input.
-
-- **Tech:** React, values.js library, Tailwind CSS
-- **Features:** Generate tints and shades, copy to clipboard, error handling
-- **Concepts:** External library integration, color manipulation
-
-#### [Lorem Ipsum Generator](./lorem-ipsum)
-
-Custom paragraph generator tool.
-
-- **Tech:** React, Tailwind CSS, Vite
-- **Features:** Generate specified number of paragraphs
-- **Concepts:** Dynamic content generation, form handling
-
-#### [Birthday Reminder](./birthday)
+#### [01. Birthday Reminder](./01_birthday)
 
 Birthday tracker with data display and filtering.
 
 - **Tech:** React, Tailwind CSS
 - **Features:** Display birthdays, clear all functionality
-- **Concepts:** Data display, state management, array operations
+- **Concepts:** Basic state, rendering lists, array operations
+
+#### [02. Restaurant Menu](./02_menu)
+
+Menu display with category filtering.
+
+- **Tech:** React, Tailwind CSS
+- **Features:** Dynamic category generation, filter by category, responsive grid
+- **Concepts:** Array methods, conditional rendering, data filtering
+
+#### [03. Tours Browser](./03_tours)
+
+Travel destination browser with API data.
+
+- **Tech:** React, Tailwind CSS, async/await
+- **Features:** Fetch tours from API, loading states, remove functionality, error handling
+- **Concepts:** State management, UI updates, API integration
+
+#### [04. Review Carousel](./04_review)
+
+Product review display with rating and navigation.
+
+- **Tech:** React, Font Awesome, Tailwind CSS
+- **Features:** Navigate reviews, random review selection, rating display
+- **Concepts:** State, event handlers, carousel logic
+
+#### [05. Accordion Component](./05_accordion)
+
+FAQ-style accordion with toggle functionality.
+
+- **Tech:** React, Tailwind CSS
+- **Features:** Expand/collapse questions, single-item toggle
+- **Concepts:** Conditional rendering, component state, useState for toggle state
+
+#### [06. Tabs Interface](./06_tabs)
+
+Tabbed content switcher for company experience display.
+
+- **Tech:** React, Tailwind CSS
+- **Features:** Switch between different company experiences
+- **Concepts:** State, dynamic content rendering, active state management
+
+---
+
+### 📚 Intermediate Level (7-12)
+
+#### [07. Image Slider](./07_slider)
+
+Carousel with navigation controls and boundary detection.
+
+- **Tech:** React, Tailwind CSS
+- **Features:** Left/right navigation, boundary detection, smooth transitions
+- **Concepts:** State management, intervals, array navigation
+
+#### [08. Lorem Ipsum Generator](./08_lorem-ipsum)
+
+Custom paragraph generator tool.
+
+- **Tech:** React, Tailwind CSS, Vite
+- **Features:** Generate specified number of paragraphs
+- **Concepts:** Forms, dynamic data generation, form handling
+
+#### [09. Responsive Navbar](./09_navbar)
+
+Mobile-responsive navigation with hamburger menu.
+
+- **Tech:** React, React Icons, Font Awesome, Tailwind CSS
+- **Features:** Hamburger menu, mobile responsive, smooth transitions
+- **Concepts:** Responsive design, event handling, mobile-first approach
+
+#### [10. Sidebar Navigation](./10_sidebar)
+
+Sidebar with modal support and global state.
+
+- **Tech:** React, Context API, React Icons, Tailwind CSS
+- **Features:** Toggle sidebar, modal support, icon integration
+- **Concepts:** Conditional rendering, animations, Context API for global state
+
+#### [11. Color Palette Generator](./11_color-generator)
+
+Generate color variations from a single color input.
+
+- **Tech:** React, values.js library, Tailwind CSS
+- **Features:** Generate tints and shades, copy to clipboard, error handling
+- **Concepts:** External library integration, forms, color manipulation
+
+#### [12. Grocery List Manager](./12_grocery-bud)
+
+Todo/grocery list with full CRUD operations.
+
+- **Tech:** React, Font Awesome, Tailwind CSS
+- **Features:** Add/edit/delete items, alert system, form validation
+- **Concepts:** CRUD operations, local storage, form handling
+
+---
+
+### 🚀 Advanced Level (13-18)
+
+#### [13. Step-by-Step Guide](./13_steps) [TypeScript]
+
+Multi-step guide component with navigation.
+
+- **Tech:** React 19, TypeScript, Tailwind CSS v4
+- **Features:** Navigate through steps, track progress, previous/next buttons
+- **Concepts:** TypeScript basics, component composition, state tracking
+
+#### [14. Pizza Menu](./14_pizza-menu) [TypeScript]
+
+Pizza restaurant menu with ordering functionality.
+
+- **Tech:** React 19, TypeScript, Tailwind CSS v4
+- **Features:** Display pizza menu, availability status, ordering system
+- **Concepts:** TypeScript with React, props, conditional rendering
+
+#### [15. Travel Packing List](./15_far-away) [TypeScript]
+
+Packing list manager for travel preparation.
+
+- **Tech:** React 19, TypeScript, Tailwind CSS v4
+- **Features:** Add items, mark as packed, delete items, sorting options, statistics
+- **Concepts:** TypeScript state management, CRUD operations, sorting algorithms
+
+#### [16. Stripe Navigation Clone](./16_stripe)
+
+Animated dropdown navigation system with dynamic positioning.
+
+- **Tech:** React, Context API, React Icons
+- **Features:** Hover-triggered submenus, dynamic positioning, responsive sidebar
+- **Concepts:** Complex layouts, navigation patterns, advanced Context usage
+
+#### [17. Tic-Tac-Toe Game](./17_tic-tac-toe)
+
+Two-player game with winner detection and game state management.
+
+- **Tech:** React, Tailwind CSS
+- **Features:** Player customization, winner detection, game history, draw detection, rematch
+- **Concepts:** Game logic, history management, state derivation
+
+#### [18. Project Management App](./18_management)
+
+Full-featured project and task management application with complex state handling.
+
+- **Tech:** React, Tailwind CSS, Vite
+- **Features:** Create/delete projects, manage tasks, sidebar navigation, modal support
+- **Concepts:** Refs, portals, modals, component composition
+
+---
+
+### 🎯 Expert Level (19-22)
+
+#### [19. Shopping Cart](./19_cart)
+
+E-commerce cart with advanced state management patterns.
+
+- **Tech:** React, useReducer, Context API, React Icons
+- **Features:** Add/remove items, quantity control, total calculation, clear cart
+- **Concepts:** Context API, useReducer pattern, action dispatchers
+
+#### [20. Bank Account Manager](./20_bank) [TypeScript]
+
+Modern banking application with Redux Toolkit state management.
+
+- **Tech:** React 19, TypeScript, Redux Toolkit, Axios, Tailwind CSS v4
+- **Features:** Customer creation, account operations, balance management, transaction history
+- **Concepts:** TypeScript, Redux Toolkit, complex state management
+
+#### [21. Movie Search App](./21_movies)
+
+Movie database with search and favorites functionality.
+
+- **Tech:** React, React Router, Font Awesome, Tailwind CSS
+- **Features:** Search movies, movie details, favorites management, routing
+- **Concepts:** Routing, API integration, search functionality
+
+#### [22. Cocktail Finder](./22_cocktails)
+
+Multi-page cocktail search application with external API integration.
+
+- **Tech:** React Router v6, TheCocktailDB API, Tailwind CSS
+- **Features:** Search cocktails, detailed cocktail pages, about page, routing, error handling
+- **Concepts:** Routing, API integration, Context API, useReducer
 
 ---
 
@@ -238,6 +284,8 @@ project-name/
 - **useState** - Local component state for simple interactions
 - **useReducer** - Complex state logic with action dispatchers
 - **Context API** - Global state sharing across components
+- **Redux Toolkit** - Advanced global state management with Redux
+- **TypeScript** - Type-safe state management
 
 ### React Patterns
 
@@ -266,13 +314,12 @@ project-name/
 
 ## 📈 Learning Progression
 
-These projects represent my journey learning React:
+These projects represent my journey learning React, organized by difficulty:
 
-1. **Fundamentals** → Basic UI components (Accordion, Tabs, Navbar, Slider)
-2. **State Management** → Interactive apps with local state (Menu, Birthday, Tours)
-3. **Advanced Patterns** → useReducer & Context API (Cart, Stripe, Sidebar)
-4. **Routing & APIs** → Full applications with multiple pages (Cocktails)
-5. **Complex Logic** → Games & management tools (Tic-Tac-Toe, Management)
+1. **Beginner (1-6)** → Basic state, rendering, and simple interactions
+2. **Intermediate (7-12)** → Forms, animations, external libraries, and CRUD operations
+3. **Advanced (13-18)** → TypeScript, complex layouts, game logic, refs & portals
+4. **Expert (19-22)** → Context API, useReducer, Redux Toolkit, routing & API integration
 
 ---
 
